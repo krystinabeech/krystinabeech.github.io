@@ -96,3 +96,30 @@ buttons {
 #portfolio-nav a:active {
   color: white;
 }
+
+/**
+* Contact page
+**/
+
+.pad-left {
+  padding-left: 1.25em;
+}
+
+.contact-box {
+  width: 60%;
+  height: 500px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #999999;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#contact-box table, th, td {
+  padding: 15px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.contact-form {
+  padding-left: 1.25em;
+}

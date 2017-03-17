@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://cdn.muicss.com/mui-0.9.11/css/mui.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/portfolio.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="http://cdn.muicss.com/mui-0.9.11/js/mui.min.js"></script>
+
+    <!-- You must incorporate Java Script somewhere in the site.
+    You may go to dynamicdrive.com to find JavaScript to use.
+    Slick drives slideshow on homepage.
+    -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+    <script src="js/portfolio.js"></script>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <title> Krystina Beech | Portfolio Project for CS210 Final Exam </title>
+  </head>
+
+  <body>
+      <header class="mui-appbar">
+
+        <div id="portfolio-nav" class="portfolio-nav">
+          <!--
+            Objective #1
+            At least 4 web pages that you created from scratch and are all linked together.
+          -->
+          <h3>
+              <a href="index.html"> Home </a>
+              <a href="bio.html"> Biography </a>
+              <a href="cover.html"> Cover Letter </a>
+              <a href="resume.html"> Resume </a>
+              <a href="contact.html"> Contact </a>
+          </h3>
+        </div>
+      </header>
+
+      <div id="content-wrapper" class="mui--text-left pad-left">
+          <h2> Contact Me </h2>
+          <div class="contact-box">
+            <!-- My contact information goes here in a reponsive table -->
+            <div class="mui--text-display2"> Contact Information by Type </div>
+            <table>
+              <thead>
+                <th> Medium </th>
+                <th> Information </th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> Cell Phone</td>
+                  <td> 555-555-5555</td>
+                </tr>
+                <tr>
+                  <td> Email</td>
+                  <td> <a href="mailto:beechk@sou.edu">beechk@sou.edu</a></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr> </hr>
+            <div class="mui--text-display2"> Contact Form </div>
+            <!-- You must have a form for your contact page,
+            the way to do this is shown at
+            http://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_mail
+            (Lifted shamelessly and barely styled from example ;) 
+            -->
+            <form class="contact-form" action="mailto:someone@example.com" method="post" enctype="text/plain">
+                      Name:<br>
+                  <input type="text" name="name"><br>
+                      E-mail:<br>
+                  <input type="text" name="mail"><br>
+                      Comment:<br>
+                  <input type="text" name="comment" size="50"><br><br>
+                  <input type="submit" value="Send">
+                  <input type="reset" value="Reset">
+            </form>
+
+          </div>
+      </div>
+
+      <footer>
+        <div class="mui-container mui--text-center">
+        </div>
+      </footer>
+
+  </body>
+
+</html>
