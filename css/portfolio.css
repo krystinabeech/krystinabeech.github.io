@@ -123,3 +123,24 @@ buttons {
 .contact-form {
   padding-left: 1.25em;
 }
+
+/**
+* Cover letter
+**/
+
+.cover-letter {
+  width: 60%;
+  padding: 10px;
+}
+
+.download-link {
+  color: red;
+}
+
+.download-link a {
+  color: red;
+}
+
+.download-link a:hover {
+  color: #770000;
+}
