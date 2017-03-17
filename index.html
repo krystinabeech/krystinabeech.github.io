@@ -8,12 +8,22 @@
 
     <link href="css/portfolio.css" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="http://cdn.muicss.com/mui-0.9.11/js/mui.min.js"></script>
+
+    <!-- You must incorporate Java Script somewhere in the site.
+    You may go to dynamicdrive.com to find JavaScript to use.
+    Slick drives slideshow on homepage.
+    -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
     <script src="js/portfolio.js"></script>
   </head>
 
   <body>
-      <header class="mui-appbar mui--z1">
+      <header class="mui-appbar">
 
         <div id="portfolio-nav" class="portfolio-nav">
           <!--
@@ -21,6 +31,7 @@
             At least 4 web pages that you created from scratch and are all linked together.
           -->
           <h3>
+              <a href="index.html"> Home </a>
               <a href="bio.html"> Biography </a>
               <a href="cover.html"> Cover Letter </a>
               <a href="resume.html"> Resume </a>
@@ -30,13 +41,14 @@
       </header>
 
       <div id="content-wrapper" class="mui--text-center">
-        <div class="mui--appbar-height"></div>
-          <br>
-          <br>
           <div class="mui--text-display3">Portfolio for CS210 Starting Point</div>
-          <br>
-          <br>
-          <button class="mui-btn mui-btn--raised">Get started</button>
+          <div class="slideshow">
+            <!--   You must use rounded corner on at least two pictures or
+              elements and a drop shadow on an image or an element. -->
+            <div class="slideshow-img"><img class="border" height="500px" src="img/carousel/IMG_1547.jpg" alt="SOU Wind Ensemble"> </img></div>
+            <div class="slideshow-img"><img class="border" height="500px" src="img/carousel/IMG_3487.jpg" alt="SOU Saxophone Orchestra"> </img></div>
+            <div class="slideshow-img"><img class="border" height="500px" src="img/carousel/IMG_8762.jpg" alt="NMHS Marching Band"> </img></div>
+          </div>
       </div>
 
       <footer>
@@ -45,4 +57,21 @@
       </footer>
 
   </body>
+
+  <!--  You must incorporate Java Script somewhere in the site.
+  You may go to dynamicdrive.com to find JavaScript to use.
+  This uses the external slideshow library and configures it to work
+  with the slideshow "id" above.
+  -->
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slideshow').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: 'linear'
+        });
+      });
+    </script>
 </html>
