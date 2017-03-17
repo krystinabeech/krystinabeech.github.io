@@ -21,6 +21,10 @@ buttons {
 /**
  * Layout CSS
  */
+.mui-appbar {
+  background-color: grey;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -71,4 +75,26 @@ buttons {
 #footer a {
   color: #fff;
   text-decoration: underline;
+}
+
+/**
+* Portfolio NAV
+*/
+#portfolio-nav {
+  padding-top: 0.8em;
+  text-align: center;
+}
+
+#portfolio-nav a {
+  margin-left: 50px;
+  color: white;
+}
+
+#portfolio-nav a:hover {
+  color: #770000;
+  text-decoration: none;
+}
+
+#portfolio-nav a:active {
+  color: white;
 }
